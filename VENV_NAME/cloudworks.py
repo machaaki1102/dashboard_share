@@ -21,7 +21,7 @@ uploaded_file = st.sidebar.file_uploader(
     "テキストファイルをアップロードしてください", type="txt"
 )
 
-# ワードクラウド、出現頻度表の各処理をサイドバーに表示
+## ワードクラウド、出現頻度表の各処理をサイドバーに表示
 st.sidebar.markdown("# 可視化のオプション")
 if uploaded_file is not None:
     # 処理の選択
