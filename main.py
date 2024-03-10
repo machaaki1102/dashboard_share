@@ -5,4 +5,4 @@ import streamlit as st
  
 #st.image(picture())
 #print(type(picture()))
-print(1)
+st.write("1")
