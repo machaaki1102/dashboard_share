@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: japanmap
+Version: 0.1.0
+Summary: `japanmap` is a package for Japanese map.
+Home-page: https://github.com/SaitoTsutomu/japanmap
+License: MIT
+Author: SaitoTsutomu
+Author-email: tsutomu7@hotmail.co.jp
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Dist: Pillow (>=9.0.1,<10.0.0)
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Requires-Dist: opencv-python (>=4.5.5,<5.0.0)
+Description-Content-Type: text/x-rst
+
+`japanmap` is a package for Japanese map.
+::
+
+   import matplotlib.pyplot as plt
+   from japanmap import picture, get_data, pref_map
+   pct = picture({'北海道': 'blue'})  # numpy.ndarray
+   # pct = picture({1: 'blue'})  # same to above
+   plt.imshow(pct)  # show graphics
+   plt.savefig('map.png')  # save to PNG file
+   svg = pref_map(range(1,48), qpqo=get_data())  # IPython.display.SVG
+   print(svg.data)  # SVG source
+
+Requirements
+------------
+* Python 3.8-3.9, Pillow, Numpy, Open-CV
+
+Features
+--------
+* nothing
+
+Setup
+-----
+::
+
+   $ pip install japanmap
+
+History
+-------
+0.0.1 (2016-6-7)
+~~~~~~~~~~~~~~~~~~
+* first release
+
