@@ -40,3 +40,5 @@ for ken, val in df.values:
 
 # 地図表示
 st.image(picture(dic))
+
+df
