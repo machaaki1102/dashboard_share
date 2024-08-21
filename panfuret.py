@@ -77,8 +77,6 @@ with col3:
         if st.checkbox(fish_item, key=fish_item):
             selected_fish.append(fish_item)
 
-#st.button('データ出力')
-
 # 選択されたアイテムのリストを表示
 #st.write('選択された肥料:', selected_fertilizer)
 #st.write('選択された球技:', selected_sports)
