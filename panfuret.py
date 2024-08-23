@@ -692,6 +692,7 @@ if st.button('開始する＜液肥＞'):
                 resized_img.save(temp_path)
 #                st.write(f"Image temporarily saved at {temp_path}")
 #
+#
             # openpyxlのImageクラスでリサイズされた画像を読み込む
             img = OpenpyxlImage(temp_path)
             # Excelのセルに画像を貼り付ける位置を指定
